@@ -16,6 +16,8 @@ Public Class Chat
         Catch ex As Exception
             MessageBox.Show("Erro ao Conectar ao Servidor!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try
+        UserName.Text = Convert.ToString(user)
+        IP.Text = Convert.ToString(myIp)
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -49,6 +51,14 @@ Public Class Chat
             TextBox1.AppendText(mensagem + vbNewLine)
 
         End If
+
+    End Sub
+
+    Private Sub IP_Click(sender As Object, e As EventArgs) Handles IP.Click
+
+    End Sub
+
+    Private Sub UserName_Click(sender As Object, e As EventArgs) Handles UserName.Click
 
     End Sub
 End Class

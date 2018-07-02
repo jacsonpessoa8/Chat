@@ -27,6 +27,10 @@ Partial Class Chat
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.UserName = New System.Windows.Forms.Label()
+        Me.IP = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -36,23 +40,23 @@ Partial Class Chat
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(340, 174)
+        Me.TextBox1.Size = New System.Drawing.Size(556, 174)
         Me.TextBox1.TabIndex = 0
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(0, 180)
+        Me.TextBox2.Location = New System.Drawing.Point(0, 214)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(247, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(556, 20)
         Me.TextBox2.TabIndex = 1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(256, 180)
+        Me.Button1.Location = New System.Drawing.Point(383, 240)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(161, 42)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Send"
+        Me.Button1.Text = "Enviar "
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Timer1
@@ -60,11 +64,50 @@ Partial Class Chat
         Me.Timer1.Enabled = True
         Me.Timer1.Interval = 1
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 177)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(85, 13)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Usuário Logado:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 190)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(20, 13)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "IP:"
+        '
+        'UserName
+        '
+        Me.UserName.AutoSize = True
+        Me.UserName.Location = New System.Drawing.Point(103, 177)
+        Me.UserName.Name = "UserName"
+        Me.UserName.Size = New System.Drawing.Size(0, 13)
+        Me.UserName.TabIndex = 5
+        '
+        'IP
+        '
+        Me.IP.AutoSize = True
+        Me.IP.Location = New System.Drawing.Point(38, 190)
+        Me.IP.Name = "IP"
+        Me.IP.Size = New System.Drawing.Size(88, 13)
+        Me.IP.TabIndex = 6
+        Me.IP.Text = "000.000.000.000"
+        '
         'Chat
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(340, 209)
+        Me.ClientSize = New System.Drawing.Size(556, 290)
+        Me.Controls.Add(Me.IP)
+        Me.Controls.Add(Me.UserName)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -79,4 +122,8 @@ Partial Class Chat
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents UserName As Label
+    Friend WithEvents IP As Label
 End Class

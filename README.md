@@ -6,7 +6,7 @@ Utilizado linguagem Visual Basic com protocolos TCP/IP
 
 ## Pré Requisitos
 
-Os usuários precisam estar conectados a mesma rede e ambos com a aplciação aberta.
+Os usuários precisam estar conectados a mesma rede e ambos com a aplicação aberta.
 
 ## 1 - Utilize Visual Studio 2017 (Não testado com versões mais antigas, porém é provavel que funcione também pois o codigo foi escrito em VB)
 ## 2 - Va em Arquivo -> Abrir -> Projeto/Solução -> e selecione a pasta onde está o codigo e abra Chat.sln

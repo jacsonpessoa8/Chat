@@ -6,6 +6,7 @@ Public Class Chat
     Public myIp As String
     Public friendIp As String
     Public user As String
+    Public test As String
 
     Dim listener As New TcpListener(6060)
     Dim client As New TcpClient

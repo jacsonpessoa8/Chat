@@ -6,7 +6,6 @@ Public Class Chat
     Public myIp As String
     Public friendIp As String
     Public user As String
-    Public test As String
 
     Dim listener As New TcpListener(6060)
     Dim client As New TcpClient
@@ -20,16 +19,10 @@ Public Class Chat
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Try
-
-        Catch ex As SocketException
-            MessageBox.Show("Erro ao Conectar ao Servidor!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
-        End Try
-
 
         client = New TcpClient(friendIp, 6060)
         Dim sw As New StreamWriter(client.GetStream())
-        sw.Write(TextBox2.Text)
+        sw.Write(user + ": " + TextBox2.Text)
         sw.Flush()
 
         TextBox1.AppendText(user + ": " + TextBox2.Text + vbNewLine)
